@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Notekit - Smart note-taking Chrome extension with projects, tasks, reminders, calendar, and voice notes. Organize your thoughts and boost productivity.">
+  <title>Notekit - Smart Note Taking & Organization | Chrome Extension</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-brand">
+        <img src="assets/logo.png" alt="Notekit" class="logo">
+        <span class="brand-name">Notekit</span>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#features">Features</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="activate.html" class="nav-link-secondary">Activate License</a></li>
+        <li><a href="https://chrome.google.com/webstore" class="btn btn-primary" target="_blank" rel="noopener">Install Extension</a></li>
+      </ul>
+      <button class="mobile-menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <h1 class="hero-title">Organize Your Thoughts,<br>Boost Your Productivity</h1>
+          <p class="hero-subtitle">Notekit is a powerful Chrome extension that helps you capture, organize, and manage your notes, tasks, and ideas—all without leaving your browser.</p>
+          <div class="hero-cta">
+            <a href="https://chrome.google.com/webstore" class="btn btn-primary btn-large" target="_blank" rel="noopener">Install for Chrome</a>
+            <a href="pricing.html" class="btn btn-secondary btn-large">View Pricing</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-number">20+</span>
+              <span class="stat-label">Free Notes</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">5</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Privacy-First</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Animated Notekit Interface Demo -->
+        <div class="notekit-demo">
+          <div class="demo-container">
+            <div class="demo-header">
+              <div class="demo-logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2d6ba8" stroke-width="2">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                  <polyline points="14 2 14 8 20 8"/>
+                  <line x1="16" y1="13" x2="8" y2="13"/>
+                  <line x1="16" y1="17" x2="8" y2="17"/>
+                </svg>
+              </div>
+              <span class="demo-brand">Notekit</span>
+              <div class="demo-icons">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="3"/>
+                  <path d="M12 1v6m0 6v6M5.64 5.64l4.24 4.24m4.24 4.24l4.24 4.24M1 12h6m6 0h6M5.64 18.36l4.24-4.24m4.24-4.24l4.24-4.24"/>
+                </svg>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="8"/>
+                  <path d="M21 21l-4.35-4.35"/>
+                </svg>
+              </div>
+            </div>
+            <div class="demo-editor">
+              <div class="demo-toolbar">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                  <polyline points="14 2 14 8 20 8"/>
+                </svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/>
+                  <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+                </svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+                  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+                </svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                  <polyline points="17 8 12 3 7 8"/>
+                  <line x1="12" y1="3" x2="12" y2="15"/>
+                </svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8a4 4 0 0 1 4-4z"/>
+                  <path d="M6 9h6"/>
+                </svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8a4 4 0 0 1 4-4z"/>
+                  <path d="M6 9h6" transform="rotate(15 12 12)"/>
+                </svg>
+              </div>
+              <div class="demo-textarea">
+                <div class="demo-typing-text"></div>
+              </div>
+              <div class="demo-fields">
+                <div class="demo-field">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                  </svg>
+                  <span>Select project (optional)</span>
+                </div>
+                <div class="demo-field">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/>
+                  </svg>
+                  <span>Add tags (e.g., #idea #work)</span>
+                </div>
+              </div>
+              <button class="demo-save-btn">Save Note</button>
+            </div>
+            <div class="demo-notes-section">
+              <div class="demo-notes-header">
+                <h3>Your Notes</h3>
+                <button class="demo-more-btn">More Actions</button>
+              </div>
+              <div class="demo-notes-list">
+                <div class="demo-note-card note-1">
+                  <div class="note-content">
+                    <h4>Meeting Notes - Q1 Planning</h4>
+                    <p>Discuss quarterly goals and team objectives...</p>
+                    <div class="note-meta">
+                      <span class="note-tag">#work</span>
+                      <span class="note-date">2 hours ago</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="demo-note-card note-2">
+                  <div class="note-content">
+                    <h4>Project Ideas</h4>
+                    <p>Brainstorming session for new features...</p>
+                    <div class="note-meta">
+                      <span class="note-tag">#ideas</span>
+                      <span class="note-date">1 day ago</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="demo-note-card note-3">
+                  <div class="note-content">
+                    <h4>Research Findings</h4>
+                    <p>Key insights from user feedback analysis...</p>
+                    <div class="note-meta">
+                      <span class="note-tag">#research</span>
+                      <span class="note-date">3 days ago</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="features">
+    <div class="container">
+      <h2 class="section-title">Everything You Need to Stay Organized</h2>
+      <p class="section-subtitle">Powerful features designed to help you capture and organize your thoughts effortlessly</p>
+      
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+              <line x1="16" y1="13" x2="8" y2="13"/>
+              <line x1="16" y1="17" x2="8" y2="17"/>
+            </svg>
+          </div>
+          <h3>Smart Note-Taking</h3>
+          <p>Rich text formatting, tags, projects, and powerful search to find what you need instantly.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+              <polyline points="9 22 9 12 15 12 15 22"/>
+            </svg>
+          </div>
+          <h3>Project Organization</h3>
+          <p>Organize notes into projects with custom colors and icons. Keep work and personal separate.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+              <polyline points="22 4 12 14.01 9 11.01"/>
+            </svg>
+          </div>
+          <h3>Tasks & Reminders</h3>
+          <p class="premium-badge">Premium</p>
+          <p>Convert notes to tasks, set due dates, priorities, and recurring reminders. Never miss a deadline.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+              <line x1="16" y1="2" x2="16" y2="6"/>
+              <line x1="8" y1="2" x2="8" y2="6"/>
+              <line x1="3" y1="10" x2="21" y2="10"/>
+            </svg>
+          </div>
+          <h3>Calendar View</h3>
+          <p class="premium-badge">Premium</p>
+          <p>Visualize your notes and tasks in month, week, and day views. Plan your time effectively.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+            </svg>
+          </div>
+          <h3>Note Encryption</h3>
+          <p class="premium-badge">Premium</p>
+          <p>Lock sensitive notes with password protection. Your data stays secure with AES-GCM encryption.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+            </svg>
+          </div>
+          <h3>Quick Capture</h3>
+          <p class="premium-badge">Premium</p>
+          <p>Capture content from any webpage with one click. Save articles, quotes, and ideas instantly.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+              <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+            </svg>
+          </div>
+          <h3>Note Linking</h3>
+          <p class="premium-badge">Premium</p>
+          <p>Connect related notes with backlinks and graph view. Build your knowledge network.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+          </div>
+          <h3>Timezone Support</h3>
+          <p class="premium-badge">Premium</p>
+          <p>Timezone-aware timestamps, reminders, and sorting. Works perfectly across time zones.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/>
+              <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+              <line x1="12" y1="19" x2="12" y2="23"/>
+              <line x1="8" y1="23" x2="16" y2="23"/>
+            </svg>
+          </div>
+          <h3>Voice-to-Text</h3>
+          <p class="premium-badge">Premium</p>
+          <p>Dictate notes using your voice. Perfect for hands-free note-taking.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing CTA -->
+  <section class="pricing-cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Ready to Get Organized?</h2>
+        <p>Start free with 20 notes and 5 projects, or upgrade to Premium for unlimited everything.</p>
+        <a href="pricing.html" class="btn btn-primary btn-large">View Pricing Plans</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">Why Notekit?</h2>
+      <div class="about-grid">
+        <div class="about-card">
+          <h3 style="display: flex; align-items: center; gap: 8px;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+            </svg>
+            Privacy-First
+          </h3>
+          <p>All your data is stored locally in your browser. No cloud sync, no data collection, no tracking. Your notes belong to you.</p>
+        </div>
+        <div class="about-card">
+          <h3 style="display: flex; align-items: center; gap: 8px;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+            </svg>
+            Always Accessible
+          </h3>
+          <p>Works right in your browser. No app switching, no separate window. Your notes are always just one click away.</p>
+        </div>
+        <div class="about-card">
+          <h3 style="display: flex; align-items: center; gap: 8px;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+              <path d="M2 17l10 5 10-5"/>
+              <path d="M2 12l10 5 10-5"/>
+            </svg>
+            Powerful & Simple
+          </h3>
+          <p>Advanced features when you need them, simple interface when you don't. Built for both casual and power users.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-brand">
+            <img src="assets/logo.png" alt="Notekit" class="footer-logo">
+            <span class="brand-name">Notekit</span>
+          </div>
+          <p>Smart note-taking for the modern web.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="activate.html">Activate License</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="mailto:support@notekit.app">Contact Us</a></li>
+            <li><a href="https://chrome.google.com/webstore" target="_blank" rel="noopener">Chrome Web Store</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Notekit. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
