@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const activationForm = document.getElementById('activation-form');
   if (activationForm) {
     // This will be set from your Vercel environment
-    const apiUrl = window.API_BASE_URL || 'https://your-vercel-domain.vercel.app/api';
+    const apiUrl = window.API_BASE_URL || 'https://www.notekit.co/api';
     // Store for use in activation script
     window.API_BASE_URL = apiUrl;
   }

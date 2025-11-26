@@ -140,8 +140,8 @@
       submitBtn.textContent = 'Activating...';
 
       try {
-        // Call activation API - Update with your Vercel domain
-        const apiUrl = 'https://your-vercel-domain.vercel.app/api/activate-license';
+        // Call activation API
+        const apiUrl = 'https://www.notekit.co/api/activate-license';
         const response = await fetch(apiUrl, {
           method: 'POST',
           headers: {
