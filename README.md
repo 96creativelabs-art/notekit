@@ -20,8 +20,8 @@ Public website for Notekit Chrome Extension.
    - Add `API_BASE_URL` if you want to override the default API URL
 
 4. **Update API URLs:**
-   - Update `activate.html` with your actual Vercel API URL
    - Update `pricing.html` with your Lemon Squeezy checkout URL
+   - Note: License activation is handled directly in the extension, not on the website
 
 ## Files Structure
 
@@ -29,7 +29,6 @@ Public website for Notekit Chrome Extension.
 notekit-website/
 ├── index.html          # Landing page
 ├── pricing.html        # Pricing page
-├── activate.html       # License activation page
 ├── privacy.html        # Privacy policy
 ├── terms.html          # Terms of service
 ├── styles.css          # All styles (brand colors: #2d6ba8)
@@ -54,9 +53,9 @@ notekit-website/
 ## Customization
 
 Before deploying, update:
-1. API URLs in `activate.html` (line with `your-vercel-domain.vercel.app`)
-2. Lemon Squeezy checkout URL in `pricing.html` (line with `your-store.lemonsqueezy.com`)
-3. Contact email (replace `support@notekit.app` with your email)
+1. Lemon Squeezy checkout URL in `pricing.html` (line with `your-store.lemonsqueezy.com`)
+2. Contact email (replace `support@notekit.app` with your email)
+3. Note: License activation is handled in the extension's settings, not on the website
 
 ## Features
 
@@ -64,6 +63,6 @@ Before deploying, update:
 - ✅ Mobile-friendly navigation
 - ✅ Brand colors throughout
 - ✅ SEO-friendly
-- ✅ License activation integration
 - ✅ Privacy-first messaging
+- ✅ License activation handled in extension (not on website)
 
